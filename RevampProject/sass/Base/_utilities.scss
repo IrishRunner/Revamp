@@ -1,0 +1,25 @@
+// Common margins
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+    
+    @include respond(tablet-portrait){
+        margin-bottom: 5rem;
+    }
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+    
+    @include respond(tablet-portrait){
+        margin-bottom:3rem;
+    }
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}

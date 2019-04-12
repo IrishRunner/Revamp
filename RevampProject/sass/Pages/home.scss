@@ -1,0 +1,51 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+    
+    @include respond(tablet-portrait){
+        padding: 20rem 0;
+    }
+}
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.79), rgba($color-primary-dark, 0.79)),
+        url(../img/vanBlack.jpg);
+    background-size: cover; 
+    transform: skewY(-5deg);
+    margin-top: -8rem;
+    
+    & > * {
+        transform: skewY(5deg);
+    }
+    
+}
+
+.section-testimonials {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 10rem 0;
+    margin-top: -10rem;
+    
+    @include respond(tablet-portrait){
+        padding: 20rem 0 5rem 0;
+    }
+}
+
+.footer {
+    height: 8rem;
+    font-size: $default-font-size;
+    padding-top: 2rem;
+    color: $color-white;
+    text-align: right;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-primary-light, 0.79), rgba($color-primary-dark, 0.79)),
+        url(../img/seatcover.jpg);
+    @include respond(tablet-landscape){
+        padding-right: 1rem;
+    }
+
+}

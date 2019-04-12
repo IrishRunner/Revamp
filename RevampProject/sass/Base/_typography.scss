@@ -1,0 +1,99 @@
+// Typography 
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    
+    
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 2.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone){
+            letter-spacing: 1rem;
+            font-size: 5rem;
+            }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: .9rem;
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone){
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include respond(tablet-portrait){
+        font-size: 2.5rem;
+    }
+    @include respond(phone){
+        font-size: 2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(last-child){
+        margin-bottom: 3rem;
+    }
+    
+}
+
+//Customer Testimonials
+
+blockquote {
+    padding: 1.5rem;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    font-size: 2.5rem;
+}
+
+cite {
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 500%;
+    padding-top: 1rem;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.form-heading {
+    font-size: 3rem;
+}

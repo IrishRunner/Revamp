@@ -1,0 +1,125 @@
+//Customer testimonial cards on Home Page
+
+.card {
+    //functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    
+    
+    &__side {
+    height: 50rem;
+    transition: all .8s ease; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        
+        &--front {
+            &-1 {
+                background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+            
+            &-2 {
+                background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            
+            &-3 {
+                background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+        
+        }
+        
+        
+    
+        &--back { 
+        transform: rotateY(180deg);
+            &-1 {
+              background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+              border-radius: 3px;
+              box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+            }
+            &-2 {
+              background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+              border-radius: 3px;
+              box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15); 
+            }
+            &-3 {
+             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+              border-radius: 3px;
+              box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+            }
+        }
+        
+        
+    }
+    
+    
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+    
+    
+    //Front side styling
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        
+        &--1 {
+            background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/extension.jpg);
+        }
+        
+        &--2 {
+            background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/bathroom5.jpg);  
+        }
+        
+        &--3 {
+            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/decking.jpg);
+        }
+    }
+    
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        right: 1.2rem;
+        text-align: center;
+    }
+    
+    &__details {
+//        padding: 2rem;
+        ul {
+            list-style: none;
+            width: 90%;
+            margin: 0 auto;
+            
+            li {
+                text-align: center;
+                font-size: 2rem;
+                padding: 1rem;
+                color: $color-white;
+                
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+                
+            }
+        }
+    }
+    &__testimonial {
+        color: $color-white;
+        position: relative;
+    }
+}

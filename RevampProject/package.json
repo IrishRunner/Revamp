@@ -1,0 +1,14 @@
+{
+  "name": "revamp",
+  "version": "1.0.0",
+  "description": "landing page for Revamp",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "LIam Grogan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

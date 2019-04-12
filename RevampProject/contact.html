@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="app.js"></script>
+        
+        <title>Revamp | Building &amp; Renovations</title>
+    </head>
+    <body>
+        <header class="header1">
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+               </div>
+           </nav> 
+        </header>
+           <main class="form-section">
+                   <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                     Contact Us
+                    </h2> 
+                    <p class="paragraph">Revamp is based in Naas, Co. Kildare but carries out work across the greater Dublin region.<br>
+                    Phone 086 xxxxxx or fill out the form below for more information.  </p>  
+                    </div> 
+                    <form class="form" id="form" action="https://formspree.io/groganliam77@gmail.com" method="POST">
+                        <p><label>First Name      : <input type="text" name="firstName" class="firstName"></label></p>
+                        <p><label>Last Name      : <input type="text" name="lastName" class="lastName" ></label></p>
+                        <p><label>Phone Number      : <input type="phone"  name="phone"></label></p>
+                        <p><label>Email Address: <input type="email" name ="email" placeholder="e.g. abc@gmail.com" class="email"></label></p>
+                        <p><label>How did you hear about Revamp?</label>
+                        </p>
+                        <select name="survey">
+                            <option value="recommend">Word of mouth</option>
+                            <option value="advertising">Advertising</option>
+                            <option value="van">Saw the van</option>
+                            <option value="internet">Internet search</option>
+                        </select>
+                        <p><label>How do you wish Revamp to contact you? </label></p>
+                            <div class="radios">
+                                <p><input type="radio" name="contact" value="phone">Phone</p>
+                                <p><input type="radio" name="contact" value="email">Email</p>
+                                <p><input type="radio" name="contact" value="either" >Either</p>
+                            </div>
+                        <p><label>Your Message:<textarea rows="10" cols="40" name="message" ></textarea></label></p>
+                        <input type="submit"  value="submit" class="submit">
+                        <div class="status">
+                            
+                        </div>
+                    </form>
+            </main>
+            <footer class="footer">
+           <div class="row">
+               &copy; Revamp 2019
+           </div>    
+        </footer>
+        
+    </body>
+        
+</html>
